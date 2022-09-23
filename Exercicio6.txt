@@ -1,0 +1,12 @@
+Relacionamentos SQL são estruras de dados relacionados entre duas ou mais tabelas afim de salvar ou consultar dados.
+
+Tipos de relacionamento: 
+
+01. Um pra um: As duas tabelas podem ter somente 1 registro de cada lado relacionando a outra. Ou seja, uma chave primaria(PK) só pode ser referenciada(FK) UMA vez na outra tabela.
+
+Extra(Fonte - https://www.ibm.com/docs/pt-br/control-desk/7.6.1.x?topic=structure-database-relationships): A maioria de relacionamento 1 pra 1 são forçadas ainda em codigo por regras de negocios. Sem essas regras, dificilmente você iria obter um erro no BD ao relacionar uma PK em mais de um registro ao mesmo tempo.
+
+-------------------------------------------------------------
+02. Um para muitos: A tabela que possui a PK pode possuir um ou varios registros. Ex: Produto de Marca X. O produto só será relacionado a UMA marca da tabela 'marcas', mas a marca desse produto pode ter N produtos relacionados a ela.
+
+03. Muitos para muitos: Cada dado em ambas as tabelas podem ser referenciados uma ou mais vezes na outra tabela. Toda via, esses relacionamentos só são possiveis por meio de uma 3ª tabela, pois se torna impossivel que essas 2 tabelas se relacionem entre si.
